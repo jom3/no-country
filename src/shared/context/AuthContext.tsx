@@ -30,7 +30,7 @@ export const useAuth = () => {
 export const AuthProvider = ({ children }: AuthProviderProps) => {
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [errors, setErrors] = useState([]);
+  const [errors, setErrors] = useState< string[] | never>([]);
   const [loading, setLoading] = useState(true);
 
   const signUp = async (user: RegisterUser) => {

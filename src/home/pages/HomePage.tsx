@@ -57,7 +57,7 @@ const testimonios = [
 
 export const HomePage = () => {
   const navigate = useNavigate();
-  const { isAuthenticated, logout } = useAuth();
+  const { isAuthenticated } = useAuth();
   const handleLogin = () => {
     navigate("/auth/login", { replace: true });
   };

@@ -76,7 +76,7 @@ import {
   Paper,
   useTheme,
 } from "@mui/material";
-import { Mail, Edit, School, Person, Logout, Home, BackHandOutlined } from "@mui/icons-material";
+import { Mail, Edit, School, Person, Logout } from "@mui/icons-material";
 import { useAuth } from "../../shared/context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import { GiReturnArrow } from "react-icons/gi";
@@ -183,7 +183,6 @@ function Profile() {
               <Box sx={{ textAlign: "center" }}>
                 <Typography variant="h5" fontWeight="bold" gutterBottom>
                   {user?.username}
-                  {user?.name}
                 </Typography>
                 <Typography color="text.secondary" variant="body2">
                   {user?.email}
